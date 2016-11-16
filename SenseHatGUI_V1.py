@@ -48,12 +48,12 @@ def horns_LEDMatrix(X, O):
 	
 	""" Creates Bulls Head on LED Matrix  
        
-              +       + 	
+              +              + 	
 	        +           +
 	        + + + + + + +
 	          + + + + + 
 	            + + + 
-                + + + 	
+                    + + + 	
 	              + 		
 	
 	"""
@@ -75,20 +75,20 @@ def run_LEDMatrix():
 	for i in range(10):
 		
 		X = (255, 0, 0)
-        O = (0, 255, 0)
+ 	        O = (0, 255, 0)
         	                
-        horns_LEDMatrix(X, O)
+        	horns_LEDMatrix(X, O)
         	        	
-        X = (255, 0, 255)
-        O = (255, 255, 0) 
+       	        X = (255, 0, 255)
+                O = (255, 255, 0) 
         	
-        horns_LEDMatrix(X, O)
+                horns_LEDMatrix(X, O)
         	
-        X = (255, 255, 255)
-        O = (0, 0, 0)
+                X = (255, 255, 255)
+                O = (0, 0, 0)
                              
-        horns_LEDMatrix(X, O)
-    
+                horns_LEDMatrix(X, O)
+
 	sense.show_message("In Metal, We Trust !!!", text_colour=[255, 0, 0], back_colour=[0, 0, 255])        
 	sense.clear()
 
